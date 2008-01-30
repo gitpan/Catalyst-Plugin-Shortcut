@@ -1,0 +1,8 @@
+Revision history for Perl extension Catalyst::Plugin::Shortcut.
+
+0.02  2008/01/30
+- fixed code to match Catalyst code-styling/wirting (using Class::C3)
+- moved to new namespace (now Catalyst::Plugin::Shortcut insteadof Catalyst::Plugin::Shortcut::urifor)
+
+0.01  2007/12/27
+- created original version

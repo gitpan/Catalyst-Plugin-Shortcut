@@ -1,0 +1,45 @@
+Catalyst::Plugin::Shortcut::urifor
+==================================
+
+DESCRIPTION
+
+This module's just shortcut, if you don't like type more than needed.
+
+    # In your application class
+    use Catalyst qw/Shortcut/;
+
+    # Then in your TT template use
+    [% Catalyst.urifor(
+        'Book' => 'list',
+        @args?,
+        \%query_values?
+      )
+    %]
+
+    # istead of
+    [% Catalyst.uri_for(
+        Catalyst.controller('Book').action_for('list'),
+        @args?,
+        \%query_values?
+      )
+    %]
+
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+
+AUTHOR, COPYRIGHT AND LICENCE
+       
+Oleg Kostyuk aka CUB (cub.uanic@gmail.com)
+
+Copyright (c) 2007 the aforementioned author(s). All rights
+reserved. This program is free software; you can redistribute
+it and/or modify it under the same terms as Perl itself.
+
